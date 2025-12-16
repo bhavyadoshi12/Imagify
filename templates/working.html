@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}How It Works - Imagify AI{% endblock %}
+
+{% block content %}
+<section class="working-section">
+    <div class="container">
+        <h2 class="section-title reveal">How ImagifyAI Works</h2>
+        <p class="section-subtitle reveal">Understanding the magic behind our AI-powered story generation</p>
+        
+        <div class="process-flow" style="max-width: 1000px; margin: 4rem auto;">
+            <!-- Step 1 -->
+            <div class="process-step reveal" style="display: flex; align-items: center; margin-bottom: 4rem; gap: 3rem;">
+                <div class="step-visual" style="flex: 1; text-align: center;">
+                    <div class="step-icon" style="width: 100px; height: 100px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: white; font-size: 2.5rem;">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+                <div class="step-content" style="flex: 2;">
+                    <h3>1. Image Upload & Preprocessing</h3>
+                    <p>Your image is uploaded and preprocessed to optimize it for AI analysis. We support various formats and automatically handle resizing and normalization.</p>
+                    <ul style="margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Format conversion</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Size optimization</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Quality preservation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="process-step reveal" style="display: flex; align-items: center; margin-bottom: 4rem; gap: 3rem; flex-direction: row-reverse;">
+                <div class="step-visual" style="flex: 1; text-align: center;">
+                    <div class="step-icon" style="width: 100px; height: 100px; background: var(--gradient-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: white; font-size: 2.5rem;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="step-content" style="flex: 2;">
+                    <h3>2. Visual Feature Extraction</h3>
+                    <p>Our BLIP (Bootstrapping Language-Image Pre-training) model analyzes the image to extract visual features, objects, scenes, and contextual information.</p>
+                    <ul style="margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Object detection</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Scene understanding</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Context analysis</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="process-step reveal" style="display: flex; align-items: center; margin-bottom: 4rem; gap: 3rem;">
+                <div class="step-visual" style="flex: 1; text-align: center;">
+                    <div class="step-icon" style="width: 100px; height: 100px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: white; font-size: 2.5rem;">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                <div class="step-content" style="flex: 2;">
+                    <h3>3. Content Generation</h3>
+                    <p>Based on the visual analysis, our transformer models generate coherent and creative text content tailored to your selected style (caption, story, or poetic).</p>
+                    <ul style="margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Style adaptation</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Creative writing</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Context preservation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="process-step reveal" style="display: flex; align-items: center; gap: 3rem; flex-direction: row-reverse;">
+                <div class="step-visual" style="flex: 1; text-align: center;">
+                    <div class="step-icon" style="width: 100px; height: 100px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: white; font-size: 2.5rem;">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+                <div class="step-content" style="flex: 2;">
+                    <h3>4. Result Delivery</h3>
+                    <p>The generated content is presented in a beautiful, easy-to-read format with options to copy, download, or generate new variations.</p>
+                    <ul style="margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Instant delivery</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> Multiple output options</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color);"></i> User-friendly interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Section -->
+<section class="technology-section" style="padding: 6rem 2rem; background: var(--gradient); color: white;">
+    <div class="container">
+        <h2 class="section-title reveal" style="color: white;">Technology Behind ImagifyAI</h2>
+        
+        <div class="tech-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="tech-card glass-effect-heavy reveal" style="padding: 2rem; border-radius: 15px; text-align: center;">
+                <i class="fab fa-python" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3>PyTorch</h3>
+                <p>Deep learning framework powering our AI models</p>
+            </div>
+            
+            <div class="tech-card glass-effect-heavy reveal" style="padding: 2rem; border-radius: 15px; text-align: center;">
+                <i class="fas fa-project-diagram" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3>Transformers</h3>
+                <p>State-of-the-art natural language processing</p>
+            </div>
+            
+            <div class="tech-card glass-effect-heavy reveal" style="padding: 2rem; border-radius: 15px; text-align: center;">
+                <i class="fas fa-camera" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3>BLIP Model</h3>
+                <p>Vision-language pre-training for image understanding</p>
+            </div>
+            
+            <div class="tech-card glass-effect-heavy reveal" style="padding: 2rem; border-radius: 15px; text-align: center;">
+                <i class="fas fa-code" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <h3>Flask</h3>
+                <p>Lightweight and powerful web framework</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
