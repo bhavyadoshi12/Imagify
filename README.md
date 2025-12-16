@@ -1,11 +1,11 @@
-<h1 align="center">Imagify: AI Image to Story Generator 🖼️➡️📖</h1>
+# 🎨 Imagify – AI Image to Story & Caption Generator
 
 <p align="center">
-  <img src="assets/images/01.Home.png" width="900" alt="Imagify Screenshot"/>
+  <img src="assets/images/01.Home.png" width="900" alt="Imagify Home"/>
 </p>
 
 <p align="center">
-  <b>Transform your images into captivating stories, poems, and captions with a single click.</b>
+  <b>Transform images into immersive stories, poetic descriptions, and social‑ready captions using Vision‑Language AI.</b>
 </p>
 
 <p align="center">
@@ -19,29 +19,33 @@
 
 ## 🎥 Demo Video
 
-> A complete walkthrough of Imagify's image-to-story generation process.
+> A complete walkthrough of Imagify’s AI‑powered image understanding and story generation workflow.
 
 **▶ Click to play the demo video:**
 
-https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4
+[https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4](https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4)
 
 ---
 
 ## ✨ Key Features
 
 ### 🎯 Core Capabilities
-- **AI-Powered Image Analysis**: Utilizes the state-of-the-art BLIP model from Salesforce to understand image content.
-- **Multiple Generation Styles**: Choose from different output styles:
-  - **Creative Story**: An immersive narrative that brings your image to life.
-  - **Poetic Description**: A beautiful, lyrical description with artistic flair.
-  - **Smart Caption**: A concise and engaging caption perfect for social media.
-- **User-Friendly Web Interface**: A clean, modern, and responsive interface for uploading images and viewing results.
 
-### 🛠️ Tech Stack
-- **Backend**: Python, Flask
-- **ML/AI**: PyTorch, Hugging Face Transformers (BLIP)
-- **Frontend**: HTML, CSS, JavaScript
-- **Libraries**: Pillow, NumPy
+* 🧠 **Vision‑Language Intelligence** using Salesforce **BLIP** for deep image understanding
+* ✍️ **Multi‑Style Generation**
+
+  * 📖 Creative Stories
+  * 🎼 Poetic Descriptions
+  * 💬 Smart Social Captions
+* ⚡ **Real‑Time Inference Pipeline** with optimized model loading
+* 🖥️ **Clean & Intuitive UI** for seamless user experience
+
+### 🧩 AI Design Highlights
+
+* Context‑aware caption extraction
+* Dynamic prompt construction based on user style selection
+* Narrative enhancement layer for human‑like storytelling
+* Extensible architecture for future LLM integration
 
 ---
 
@@ -50,14 +54,47 @@ https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4
 <details>
 <summary><b>📸 Click to view application UI</b></summary>
 
-### 💡 Main Interface
-![Main Interface](assets/images/01.Home.png)
+### 🏠 Home Interface
 
-### 🖼️ Generated Story Example 1
-!Example 1
+![Home](assets/images/01.Home.png)
 
-### 🖼️ Generated Story Example 2
-!Example 2
+![Home](assets/images/08.Home.png)
+
+### ℹ️ About Section
+
+![About](assets/images/02.About.png)
+
+![About](assets/images/03.About.png)
+
+### ⚙️ How It Works – Flow
+
+![How It Works](assets/images/04.How_It_Works.png)
+
+![How It Works](assets/images/05.How_It_Works.png)
+
+![How It Works](assets/images/06.How_It_Works.png)
+
+
+### 📤 Image Upload
+
+![Upload](assets/images/07.Upload.png)
+
+### 🎭 Output Type Selection
+
+![Output Type](assets/images/09.Output%20Type.png)
+
+### 💬 Generated Caption
+
+![Caption](assets/images/10.Genrated_Caption.png)
+
+### 📖 Generated Story
+
+![Story](assets/images/11.Genrated_Story.png)
+
+### 📖 Generated Poetic
+
+![Poetic](assets/images/12.Genrated_Poetic.png)
+
 
 </details>
 
@@ -66,50 +103,74 @@ https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4
 ## 🚀 Quick Start
 
 ### ✅ Prerequisites
-- Python 3.8+
-- 4GB+ RAM (8GB+ Recommended for smoother performance)
-- 2GB+ free disk space (for model download)
 
-### ⚙️ Installation & Setup
+* Python 3.8+
+* 4GB+ RAM (8GB recommended)
+* Internet access (for first‑time model download)
 
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/bhavyadoshi12/Imagify.git
-    cd Imagify
-    ```
+### ⚙️ Installation & Run
 
-2.  **Create and Activate a Virtual Environment**
-    - **On Windows:**
-      ```bash
-      python -m venv .venv
-      .venv\Scripts\activate
-      ```
-    - **On macOS/Linux:**
-      ```bash
-      python3 -m venv .venv
-      source .venv/bin/activate
-      ```
+```bash
+git clone https://github.com/bhavyadoshi12/Imagify.git
+cd Imagify
+```
 
-3.  **Install Dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
+```
 
-4.  **Run the Application**
-    ```bash
-    python app.py
-    ```
+```bash
+pip install -r requirements.txt
+python app.py
+```
 
-5.  **Access Imagify**
-    Open your browser and go to: **http://localhost:5000**
+🌐 Open **[http://localhost:5000](http://localhost:5000)** in your browser
 
 ---
 
-## 📝 How It Works
+## 🧠 How It Works (AI Pipeline)
 
-1.  **Image Upload**: You upload an image through the web interface.
-2.  **AI Analysis**: The backend receives the image and feeds it to the pre-trained **BLIP** model.
-3.  **Caption Generation**: The BLIP model generates a descriptive caption for the image (e.g., "a dog is standing on the grass").
-4.  **Text Processing**: This raw caption is then processed to extract key subjects and phrases.
-5.  **Template-based Generation**: Based on your chosen style (e.g., "Poetic"), the application selects a template and fills it with the processed caption phrases to create the final, stylized output.
-6.  **Result Delivery**: The generated story and the original image are sent back to the frontend to be displayed.
+```text
+User uploads an image
+        ↓
+BLIP Vision‑Language Model
+        ↓
+Semantic context extraction (objects, mood, scene)
+        ↓
+Dynamic prompt generation (Story / Poem / Caption)
+        ↓
+AI‑enhanced narrative synthesis
+        ↓
+Final output rendered in UI
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer     | Tools                                     |
+| --------- | ----------------------------------------- |
+| Backend   | Python, Flask                             |
+| AI / ML   | PyTorch, Hugging Face Transformers (BLIP) |
+| Frontend  | HTML, CSS, JavaScript                     |
+| Utilities | Pillow, NumPy                             |
+
+---
+
+## 🔮 Future Enhancements
+
+* 🤖 LLM‑powered creative expansion (OpenAI / GPT)
+* 🎚️ Creativity & tone controls
+* ☁️ Dockerized cloud deployment
+
+---
+
+## 👨‍💻 Author
+
+**Bhavya Doshi**
+🔗 GitHub: [https://github.com/bhavyadoshi12](https://github.com/bhavyadoshi12)
+
+---
+
+⭐ If you found this project helpful, consider giving it a **star**!
