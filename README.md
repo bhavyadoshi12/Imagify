@@ -1,127 +1,115 @@
-# ImagifyAI: Image to Story Generator
+<h1 align="center">Imagify: AI Image to Story Generator 🖼️➡️📖</h1>
 
 <p align="center">
-ImagifyAI is an innovative Flask web application that bridges the gap between visual content and creative writing. It leverages a cutting-edge Vision-Language model (BLIP) to transform your images into captivating stories, engaging captions, and poetic descriptions.
+  <img src="assets/images/01.Home.png" width="900" alt="Imagify Screenshot"/>
 </p>
 
 <p align="center">
-  <img src="assets/images/01.Home.png" alt="ImagifyAI Screenshot" width="80%"/>
+  <b>Transform your images into captivating stories, poems, and captions with a single click.</b>
 </p>
 
-## ✨ Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue"/>
+  <img src="https://img.shields.io/badge/Python-3.8%2B-green"/>
+  <img src="https://img.shields.io/badge/Framework-Flask-lightblue"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow"/>
+</p>
 
-*   **AI-Powered Image Analysis**: Utilizes the state-of-the-art BLIP model from Salesforce to understand the content of your images.
-*   **Multiple Generation Styles**: Choose from different output styles to match your needs:
-    *   **Creative Story**: An immersive narrative that brings your image to life.
-    *   **Poetic Description**: A beautiful, lyrical description with artistic flair.
-    *   **Smart Caption**: A concise and engaging caption perfect for social media.
-    *   **Direct Description**: A straightforward, present-tense sentence describing the scene.
-*   **User-Friendly Web Interface**: A clean, modern, and responsive interface for uploading images and viewing results.
-*   **Built with a Modern Tech Stack**: Powered by PyTorch, Transformers, and Flask.
+---
 
-## 🛠️ Technology Stack
+## 🎥 Demo Video
 
-*   **Backend**: Python, Flask
-*   **ML/AI**:
-    *   **PyTorch**: The deep learning framework powering the AI model.
-    *   **Hugging Face Transformers**: For easy access to the pre-trained BLIP model.
-    *   **BLIP (Bootstrapping Language-Image Pre-training)**: The specific vision-language model used for generating image captions.
-*   **Frontend**: HTML, CSS, JavaScript
-*   **Other Libraries**: Pillow (for image processing), NumPy.
+> A complete walkthrough of Imagify's image-to-story generation process.
 
-## 🚀 Getting Started
+**▶ Click to play the demo video:**
 
-### 🖼️ Project Showcase
+https://github.com/bhavyadoshi12/Imagify/raw/main/assets/video/Imagify.mp4
 
-Explore the `assets` directory to find a collection of images and videos that showcase the capabilities of ImagifyAI.
-*   `assets/images`: Contains sample input images and corresponding output stories.
-*   `assets/videos`: Features video demonstrations of the application in action.
+---
 
-Follow these steps to set up and run the project on your local machine.
+## ✨ Key Features
 
-### Prerequisites
+### 🎯 Core Capabilities
+- **AI-Powered Image Analysis**: Utilizes the state-of-the-art BLIP model from Salesforce to understand image content.
+- **Multiple Generation Styles**: Choose from different output styles:
+  - **Creative Story**: An immersive narrative that brings your image to life.
+  - **Poetic Description**: A beautiful, lyrical description with artistic flair.
+  - **Smart Caption**: A concise and engaging caption perfect for social media.
+- **User-Friendly Web Interface**: A clean, modern, and responsive interface for uploading images and viewing results.
 
-*   Python 3.8 or higher
-*   `pip` (Python package installer)
-*   (Optional but Recommended) Git for version control.
+### 🛠️ Tech Stack
+- **Backend**: Python, Flask
+- **ML/AI**: PyTorch, Hugging Face Transformers (BLIP)
+- **Frontend**: HTML, CSS, JavaScript
+- **Libraries**: Pillow, NumPy
 
-### 1. Clone the Repository
+---
 
-Open your terminal or command prompt and clone the project repository.
+## 🖥️ Application Screenshots
 
-```bash
-git clone <your-repository-url>
-cd ImageStoryAI(GenAI)-Imagify
-```
+<details>
+<summary><b>📸 Click to view application UI</b></summary>
 
-### 2. Create and Activate a Virtual Environment
+### 💡 Main Interface
+![Main Interface](assets/images/01.Home.png)
 
-It is highly recommended to use a virtual environment to manage project dependencies and avoid conflicts with other Python projects.
+### 🖼️ Generated Story Example 1
+!Example 1
 
-**On Windows (Command Prompt):**
+### 🖼️ Generated Story Example 2
+!Example 2
 
-```bash
-# Create the virtual environment (named .venv)
-python -m venv .venv
+</details>
 
-# Activate the virtual environment
-.venv\Scripts\activate
-```
+---
 
-**On macOS/Linux (Bash):**
+## 🚀 Quick Start
 
-```bash
-# Create the virtual environment (named .venv)
-python3 -m venv .venv
+### ✅ Prerequisites
+- Python 3.8+
+- 4GB+ RAM (8GB+ Recommended for smoother performance)
+- 2GB+ free disk space (for model download)
 
-# Activate the virtual environment
-source .venv/bin/activate
-```
+### ⚙️ Installation & Setup
 
-After activation, your command prompt will be prefixed with `(.venv)`, indicating that the virtual environment is active.
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/bhavyadoshi12/Imagify.git
+    cd Imagify
+    ```
 
-### 3. Install Dependencies
+2.  **Create and Activate a Virtual Environment**
+    - **On Windows:**
+      ```bash
+      python -m venv .venv
+      .venv\Scripts\activate
+      ```
+    - **On macOS/Linux:**
+      ```bash
+      python3 -m venv .venv
+      source .venv/bin/activate
+      ```
 
-With the virtual environment activated, install the required Python packages using the `requirements.txt` file.
+3.  **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```bash
-pip install -r requirements.txt
-```
+4.  **Run the Application**
+    ```bash
+    python app.py
+    ```
 
-*Note: If a `requirements.txt` file is not present, you can install the packages manually:*
-`pip install flask torch transformers Pillow numpy`
+5.  **Access Imagify**
+    Open your browser and go to: **http://localhost:5000**
 
-### 4. Run the Application
-
-Now you are ready to start the Flask server.
-
-```bash
-python app.py
-```
-
-You will see output in your terminal indicating that the server is running, including the local address. The BLIP model will be downloaded and loaded the first time you run it, which may take some time.
-
-```
-🚀 Starting ImagifyAI Server...
-📍 Home: http://localhost:5000
-📍 Health: http://localhost:5000/health
-🔥 Debug mode: ON
- * Running on http://127.0.0.1:5000/
-```
-
-### 5. Access ImagifyAI
-
-Open your web browser and navigate to the following URL:
-
-**http://localhost:5000**
-
-You can now upload an image and start generating stories!
+---
 
 ## 📝 How It Works
 
 1.  **Image Upload**: You upload an image through the web interface.
 2.  **AI Analysis**: The backend receives the image and feeds it to the pre-trained **BLIP** model.
 3.  **Caption Generation**: The BLIP model generates a descriptive caption for the image (e.g., "a dog is standing on the grass").
-4.  **Text Processing**: This raw caption is then processed—converted to the present tense, shortened, and key subjects are extracted.
+4.  **Text Processing**: This raw caption is then processed to extract key subjects and phrases.
 5.  **Template-based Generation**: Based on your chosen style (e.g., "Poetic"), the application selects a template and fills it with the processed caption phrases to create the final, stylized output.
 6.  **Result Delivery**: The generated story and the original image are sent back to the frontend to be displayed.
